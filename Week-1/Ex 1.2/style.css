@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
-    height: 90vh;
+    height: 87vh;
     width: 8vh;
     align-items: center;
     justify-content: space-around;
@@ -27,13 +27,13 @@
     flex-direction: row;
     background-color: #454545;
     height: 35vh;
-    width: 96vw;
+    width: 97vw;
 }
 
 .hero-album-cover img{
     height: 30vh;
     width: 30vh;
-    margin: 10px;
+    margin: 0.7em;
 }
 
 .hero-album-dashboard {
@@ -42,7 +42,7 @@
 .hero-album-info h1 {
     color: #FFFFFF;
     margin-top: 0.5em;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 .hero-album-info p {
@@ -73,7 +73,8 @@
     background-color:#FFFFFF;
     height: 50vh;
     width: 96vw;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-left: 0.3em;
     /* justify-content:space-between;
     align-items:center; */
 }
@@ -81,8 +82,9 @@
 .track {
     display: flex;
     justify-content: space-around;
-    margin: 0.5em;
-    padding: 0.8em;
+    align-items: center;
+    margin: 0.2em;
+    padding: 0.5em;
     flex-wrap: wrap;
     font-size: 0.5em;
 }
@@ -145,15 +147,15 @@
     display: flex;
     flex-direction: row;
     background-color:#43689B;
-    height: 12.5vh;
+    height: 13vh;
     align-items: center;
-    width: 99vw;
+    width: 100vw;
 }
 
 .bottom-player-album-cover img {
     height: 9vh;
     width: 9vh;
-    margin: 4px;
+    margin: 0.4em;
 }
 
 .album-info p {
