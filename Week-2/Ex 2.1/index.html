@@ -131,7 +131,7 @@
          <section class="form-section">
             <fieldset>
                <legend>Create Account</legend>
-               <form action="" method="post">
+               <form action="https://someurl.com" method="post">
                   <div id="title">
                      <label for="title">Title: </label>
                      <label for="Mr">Mr</label>
@@ -141,38 +141,40 @@
                      <label for="Miss">Miss</label>
                      <input type="radio" name="title" id="Miss">
                   </div>
-                  <div id="fname">
-                     <label for="fname">First Name</label>
-                     <input type="text" name="fname" id="fname" required>
-                  </div>
-                  <div id="lname">
-                     <label for="lname">Last Name</label>
-                     <input type="text" name="lname" id="lname" required>
-                  </div>
-                  <div  id="email">
-                     <label for="email">Email</label>
-                     <input type="email" name="email" id="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
-                  </div>
-                  <div id="ph">
-                     <label for="ph">Phone Number</label>
-                     <input type="tel" name="ph" id="ph" pattern="[0-9]{10}" required>
-                  </div>
-                  <div id="pass">
-                     <label for="pass">Password</label>
-                     <input type="password" name="pass" id="pass" required>
-                  </div>
-                  <div id="conpass">
-                     <label for="conpass">Confirm Your Password</label>
-                     <input type="password" name="conpass" id="conpass" required>
-                  </div>
-                  <div id="country">
-                     <label for="country">Country</label>
-                     <select name="cars" id="cars">
-                        <option value="canada">canada</option>
-                        <option value="india">India</option>
-                        <option value="sri Lanka">Sri Lanka</option>
-                        <option value="bangladesh">Bangladesh</option>
-                     </select>
+                  <div class="form-grid">
+                     <div id="fname">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" required>
+                     </div>
+                     <div id="lname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" required>
+                     </div>
+                     <div  id="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                     </div>
+                     <div id="ph">
+                        <label for="ph">Phone Number</label>
+                        <input type="tel" name="ph" id="ph" pattern="[0-9]{10}" required>
+                     </div>
+                     <div id="pass">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" required>
+                     </div>
+                     <div id="conpass">
+                        <label for="conpass">Confirm Password</label>
+                        <input type="password" name="conpass" id="conpass" required>
+                     </div>
+                     <div id="country">
+                        <label for="country">Country</label>
+                        <select name="cars" id="cars">
+                           <option value="canada">canada</option>
+                           <option value="india">India</option>
+                           <option value="sri Lanka">Sri Lanka</option>
+                           <option value="bangladesh">Bangladesh</option>
+                        </select>
+                     </div>
                   </div>
                   <div id="checkbox">
                      <input type="checkbox" name="agree" id="agree" required>

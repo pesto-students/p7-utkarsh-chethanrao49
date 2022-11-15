@@ -181,6 +181,9 @@ article {
     justify-content: center;
     align-items: center;
     margin-bottom: 1em;
+    border: 0.1em solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
 }
 article img {
     height: 20em;
@@ -207,11 +210,32 @@ article p::first-letter {
     flex-direction: column;
     margin-top: 5em;
     padding: 1em;
-    width: 90vw;
+    width: 95vw;
 }
 
+.form-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+/* .form-grid label {
+    margin: 1em;
+} */
+
+.form-grid > div > input{
+    margin: 0.5em;
+    border-radius: 1em;
+}
+
+/* .form-grid > div {
+    width: 2em;
+} */
+
 legend {
-    margin: 0 0.5em 0 1.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 0.5em 0 0.5em;
     padding: 0 0.5em 0 0.5em;
 }
 
@@ -219,7 +243,7 @@ form > div {
     margin: 1em;
 }
 
-form > div > label {
+/* form > div > label {
     font-weight: 400;
     font-size: 1em;
     margin: 0 0.5em 0 1em;
@@ -227,7 +251,8 @@ form > div > label {
 
 form > div > input {
     border: 0.1em solid;
-}
+    border-radius: 1em;
+} */
 
 input[type=checkbox], input[type=radio]{
     cursor: pointer;
@@ -237,9 +262,14 @@ input[type=checkbox], input[type=radio]{
     margin-left: 1.2em;
 }
 
-#signup-btn {
-    margin-left: 1.2em;
-}
+/* #submit {
+    border: 0.1em solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    border-radius: 1em;
+} */
 
 #signup-btn:hover {
    background-color: antiquewhite;
@@ -282,16 +312,6 @@ footer > div > ul > li > img {
 height: 2em;
 }
 
- h6 {
-    background-color:  #F2F2F2;
-    font-size: 0.5em;
-    width: 100vw;
-    padding: 0 0 5em 0;
-    /* margin-bottom: 3em; */
-    /* padding-left: 10em; */
-}
-
-
 
 @media (width < 1080px) {
 
@@ -317,6 +337,59 @@ height: 2em;
         border-top: 0.2em solid;
     }
 
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    
+    #left-nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        border-top: 0.1em solid;
+    }
+    
+    #right-nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        border-top: 0.1em solid;
+    }
+    
+    #nav-bar ul li {
+        list-style-type: none;  
+        margin: 0.5em;
+        border: 0.2px solid;
+        padding: 0.5em;
+        font-size: 1em;
+    
+    }
+    
+    
+    #nav-bar ul li:hover {
+        background-color: antiquewhite;
+    }
+    
+    #subscribe {
+        background-color: #B00020;
+        color: #F2F2F2;
+    }
+    
+    #subscribe:hover {
+        background-color: #F2F2F2;
+        color: #B00020;
+    }
+    
+    #login {
+    border: 00.2em solid  #B00020;
+    }
+
+    
     #container {
         display: flex;
         flex-direction: column;
@@ -357,6 +430,12 @@ height: 2em;
         margin-top: 1em;
         width: 90vw;
         margin-right: 1em;
+    }
+
+    article img {
+        height: 20em;
+        width: 25em;
+        margin: 1em 0 0 0;
     }
 
     .left-section {
@@ -463,7 +542,7 @@ height: 2em;
         display: flex;
         flex-direction: column;
         width: 60vw;
-        height: 60vh;
+        height: 70vh;
         align-items: center;
         border: 0.1em solid;
         border-radius: 0.5em;
@@ -481,7 +560,7 @@ height: 2em;
             text-align: justify;
             padding: 0.2em;
             margin: 0.2em;
-            width: 35vw;
+            width: 50vw;
         }
         
     article {
@@ -492,6 +571,12 @@ height: 2em;
         margin-top: 1em;
         width: 90vw;
         margin-right: 1em;
+    }
+
+    article img {
+        height: 20em;
+        width: 21em;
+        margin: 1em 0 0 0;
     }
 
     .left-section {
@@ -530,7 +615,7 @@ height: 2em;
     footer {
         background-color: #F2F2F2;
         width: 100vw;
-        height: 70vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
     }
