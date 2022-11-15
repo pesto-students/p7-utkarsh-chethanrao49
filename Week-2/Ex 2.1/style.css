@@ -32,14 +32,30 @@ header img {
 header > h5 {
     font-weight: 300;
     padding: 0 1em 0 1em;
+    font-size: 1em;
 }
 
-#nav-bar ul{
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#left-nav-bar ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100vw;
+    width: 50vw;
+    border-top: 0.1em solid;
+}
+
+#right-nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50vw;
     border-top: 0.1em solid;
 }
 
@@ -47,12 +63,28 @@ header > h5 {
     list-style-type: none;  
     margin: 0.5em;
     border: 0.2px solid;
-    padding: 0.2em;
+    padding: 0.5em;
+    font-size: 1em;
 
 }
 
+
 #nav-bar ul li:hover {
     background-color: antiquewhite;
+}
+
+#subscribe {
+    background-color: #B00020;
+    color: #F2F2F2;
+}
+
+#subscribe:hover {
+    background-color: #F2F2F2;
+    color: #B00020;
+}
+
+#login {
+border: 00.2em solid  #B00020;
 }
 
 h1 + h5 {
@@ -69,8 +101,8 @@ h1 + h5 {
 .top-six-news {
     display: flex;
     flex-direction: column;
-    width: 75vw;
-    height: 25vh;
+    width: 85vw;
+    height: 50vh;
     border: 0.1em solid;
     border-radius: 0.5em;
     padding: 0.4em;
@@ -79,6 +111,8 @@ h1 + h5 {
 
 .top-six-news h2 {
     margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #B00020;
 }
 .left-section {
     display: flex;
@@ -128,13 +162,13 @@ flex-direction: row;
 }
 
 .top-news h2 {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: justify;
     padding: 0.2em;
 }
 
 .top-news p {
-    font-size: 0.4em;
+    font-size: 1em;
     text-align: justify;
     padding: 0.2em;
     margin: 0.2em;
@@ -149,8 +183,8 @@ article {
     margin-bottom: 1em;
 }
 article img {
-    height: 10em;
-    width: 15em;
+    height: 20em;
+    width: 30em;
     margin: 1em 0 0 0;
 }
 
@@ -158,7 +192,14 @@ article p {
     text-align: justify;
     margin: 1em 0 0 0;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 1em;
+}
+
+article p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #B00020;margin-right: 0.2em;
+
 }
 
 .form-section {
@@ -186,6 +227,10 @@ form > div > label {
 
 form > div > input {
     border: 0.1em solid;
+}
+
+input[type=checkbox], input[type=radio]{
+    cursor: pointer;
 }
 
 #agree {
@@ -240,11 +285,15 @@ height: 2em;
  h6 {
     background-color:  #F2F2F2;
     font-size: 0.5em;
-    width: 96vw;
-    margin-left: 4em;
+    width: 100vw;
+    padding: 0 0 5em 0;
+    /* margin-bottom: 3em; */
+    /* padding-left: 10em; */
 }
 
-@media (width < 700px) {
+
+
+@media (width < 1080px) {
 
     header img {
         margin-bottom: 0.2em;
@@ -278,8 +327,8 @@ height: 2em;
     .top-six-news {
         display: flex;
         flex-direction: column;
-        width: 60vw;
-        height: 65vh;
+        width: 55vw;
+        height: 55vh;
         align-items: center;
         border: 0.1em solid;
         border-radius: 0.5em;
@@ -346,7 +395,7 @@ height: 2em;
     footer {
         background-color: #F2F2F2;
         width: 100vw;
-        height: 80vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
     }
@@ -370,15 +419,146 @@ height: 2em;
         font-size: 0.6em;
         list-style-type: none;  
         background-color: #F2F2F2;
+        
     }
     
     footer > div > ul > li > img {
     height: 2em;
     }
     
-     h6 {
-        background-color:  #F2F2F2;
-        font-size: 0.5em;
-        width: 100vw;
+}
+
+@media (width < 700px) {
+
+    header img {
+        margin-bottom: 0.2em;
+        height: 10vh;
+        width: 70vw;
+    
     }
-  }
+
+    header > h5 {
+        font-weight: 300;
+        padding: 0 1em 0 1em;
+        margin: 0.5em;
+    }
+    
+    #nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        border-top: 0.2em solid;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        margin-right: 1em;
+    }
+
+    .top-six-news {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: 60vh;
+        align-items: center;
+        border: 0.1em solid;
+        border-radius: 0.5em;
+        padding: 0.4em;
+        margin: 1em;
+    }
+
+    #part-top-news {
+        display: flex;
+        flex-direction: column;
+        }
+
+        .top-news p {
+            font-size: 0.4em;
+            text-align: justify;
+            padding: 0.2em;
+            margin: 0.2em;
+            width: 35vw;
+        }
+        
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        width: 90vw;
+        margin-right: 1em;
+    }
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 2em;
+    }
+    
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 2em;
+    }
+    
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2em;
+        margin-right: 2em;
+    
+    }
+
+    footer {
+        background-color: #F2F2F2;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > div {
+        background-color: #F2F2F2;
+    }
+    
+    footer > div > h3{
+        background-color: #F2F2F2;
+        font-size: 0.8em;
+    }
+    
+    footer > div > ul {
+        list-style-type: none;  
+        background-color: #F2F2F2;
+    }
+    
+    footer > div > ul > li {
+        font-weight: 300;
+        font-size: 0.6em;
+        list-style-type: none;  
+        background-color: #F2F2F2;
+        
+    }
+    
+    footer > div > ul > li > img {
+    height: 2em;
+    }
+    
+}
