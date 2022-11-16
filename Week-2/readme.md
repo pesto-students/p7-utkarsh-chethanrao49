@@ -1,6 +1,6 @@
 ## Desktop View Preview
 
-![Preview1](./Ex%202.1/Desk-top-view.png)
+![Preview1](./Ex%202.1/desktop-view.png)
 
 ## Mobile View Preview
 
